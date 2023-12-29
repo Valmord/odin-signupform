@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%; 
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+body {
+  background-color: darkblue;
+  font-size: 1.6em;
+}
+
+.site-container {
+  display: flex;
+}
+
+.left-side-container {
+  flex: 1 1 100px;
+}
+
+.background-pic {
+  width: 100%;
+  position: fixed;
+  transform: scaleX(-1);
+}
+
+.right-side-container {
+  background-color: #ccc;
+  opacity: 60%;
+  height: 100vh;
+  flex: 0 0 400px;
+  padding: 40px 30px 10px;
+
+}
+
+.signup-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+h2 {
+  margin-bottom: 30px;
+}
+
+.signup-section h3 {
+  margin-bottom: 10px;
+}
+
+form {
+
+  & ul {
+      list-style: none;
+  }
+
+  & input {
+    width: 150px;
+    appearance: none;
+    outline: none;
+    border-color: gray;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 2px;
+  }
+
+  & input:focus, input:focus-visible,
+  input:focus-within {
+    border-color: blue;
+  }
+
+  & input:invalid {
+    border-color: red;
+  }
+
+}

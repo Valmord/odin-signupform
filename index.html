@@ -1,11 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup form by TC</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup form by TC</title>
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    
+  <img src="images/background.jpg" alt="shark" class="background-pic">
+  <div class="site-container">
+    <section class="left-side-container">
+        
+    </section>
+    <main class="right-side-container">
+      <h2>
+          some fictional signup form
+      </h2>
+
+      <section class="signup-section">
+        <h3>Signup Below!</h3>
+        <form action="" method="get" class="signup-form" id="signup-form">
+          
+          <ul>
+              <li><label for="first-name">First Name*</label></li>
+              <li><input type="text" name="first-name" id="first-name"required></li>
+          </ul>
+
+          <ul>
+              <li><label for="last-name">Last Name*</label></li>
+              <li><input type="text" name="last-name" id="last-name" required></li>
+          </ul>
+
+          <ul>
+            <li><label for="email">Email*</label></li>
+            <li><input type="email" name="email" id="email" required></li>
+          </ul>
+
+          <ul>
+            <li><label for="Phone number">Phone number</label></li>
+            <li><input type="tel" name="Phone number" id="Phone number"></li>
+          </ul>
+
+          <ul>
+            <li><label for="password">Password*</label></li>
+            <li><input type="password" name="password" id="password" 
+              minlength="8" required></li>
+          </ul>
+
+          <ul>
+            <li><label for="confirm-password">Confirm password*</label></li>
+            <li><input type="password" id="confirm-password" required></li>
+          </ul>
+        </form>
+        <button type="submit" form="signup-form">Sign up!</button>
+        * Required
+      </section>
+    </main>
+  </div>
 </body>
 </html>
