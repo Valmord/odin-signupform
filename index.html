@@ -5,55 +5,75 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Signup form by TC</title>
   <link rel="stylesheet" href="styles/style.css">
+  <script src="./script/code.js" defer></script>
 </head>
 <body>
   <img src="images/background.jpg" alt="shark" class="background-pic">
   <div class="site-container">
     <section class="left-side-container">
-        
+        <h1>Sharks-R-Us!</h1>
     </section>
     <main class="right-side-container">
       <h2>
-          some fictional signup form
+          Sharks-R-Us was founded as a non-profit charity for those who self-identify as sharks. 
+          Come and swim with us today!  
       </h2>
 
       <section class="signup-section">
-        <h3>Signup Below!</h3>
+        <h3>Signup Below!
+          <span class="required-text">* Required</span>
+        </h3>
         <form action="" method="get" class="signup-form" id="signup-form">
           
           <ul>
-              <li><label for="first-name">First Name*</label></li>
-              <li><input type="text" name="first-name" id="first-name"required></li>
+              <li><label for="first-name">FIRST NAME*</label></li>
+              <li><input type="text" name="first-name" id="first-name" placeholder="Dwayne"
+                autocomplete="given-name name" required pattern="^[A-Z][a-zA-Z\-' ]+"
+                class="first-name"><span></span></li>
           </ul>
 
           <ul>
-              <li><label for="last-name">Last Name*</label></li>
-              <li><input type="text" name="last-name" id="last-name" required></li>
+              <li><label for="last-name">LAST NAME*</label></li>
+              <li><input type="text" name="last-name" id="last-name" placeholder="Pipe"
+                autocomplete="family-name" required pattern="^[A-Z][a-zA-Z\-' ]+"><span></span></li>
           </ul>
 
           <ul>
-            <li><label for="email">Email*</label></li>
-            <li><input type="email" name="email" id="email" required></li>
+            <li><label for="email" class="test">EMAIL*</label></li>
+            <li><input type="email" name="email" id="email" autocomplete="email" 
+              placeholder="example@outlook.com" required><span></span></li>
           </ul>
 
           <ul>
-            <li><label for="Phone number">Phone number</label></li>
-            <li><input type="tel" name="Phone number" id="Phone number"></li>
+            <li><label for="Phone number">PHONE NUMBER</label></li>
+            <li><input type="tel" name="Phone number" id="Phone number" 
+              autocomplete="tel" minlength="7" patter="\d+"><span></span></li>
           </ul>
 
           <ul>
-            <li><label for="password">Password*</label></li>
+            <li><label for="password">PASSWORD*</label></li>
             <li><input type="password" name="password" id="password" 
-              minlength="8" required></li>
+              minlength="8" required><span></span></li>
           </ul>
 
           <ul>
-            <li><label for="confirm-password">Confirm password*</label></li>
-            <li><input type="password" id="confirm-password" required></li>
+            <li><label for="confirm-password">CONFIRM PASSWORD*</label></li>
+            <li><input type="password" id="confirm-password" 
+              minlength="8" required><span></span></li>
           </ul>
+
+          <ul>
+            <li><label for="shark-types">WHICH <em>SHARK</em> ARE YOU?</label></li>
+            <li><select class="shark-selection" name="shark" id="shark-types"></select></li>
+          </ul>
+          
+          </select>
+
         </form>
-        <button type="submit" form="signup-form">Sign up!</button>
-        * Required
+        <button type="submit" form="signup-form" class="signup-button">Sign up!</button>
+        
+
+        <a class="source-links" href="./sources.html">Image sources</a>
       </section>
     </main>
   </div>
