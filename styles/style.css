@@ -156,11 +156,15 @@ form {
     visibility: visible;
   }
 
-  & input:hover {
+  & input:hover, select:hover {
     outline: blueviolet;
     outline-style: solid;
     outline-offset: 1px;
     outline-width: 2px;
+  }
+
+  & input::placeholder {
+    opacity: 0.3;
   }
 
 }
